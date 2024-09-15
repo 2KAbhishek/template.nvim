@@ -23,7 +23,7 @@
 <h3>Short Sweet Headline 🎇🎉</h3>
 
 <figure>
-  <img src="docs/images/screenshot.png" alt="template.nvim in action">
+  <img src="doc/images/screenshot.png" alt="template.nvim in action">
   <br/>
   <figcaption>template.nvim in action</figcaption>
 </figure>
