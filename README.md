@@ -20,7 +20,7 @@
 <a href="https://github.com/2KAbhishek/template.nvim/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/template.nvim?style=flat&color=e06c75&label="> </a>
 
-<h3>Short Sweet Headline 🎇🎉</h3>
+<h3>Ready to go Neovim template 🏗️✈️</h3>
 
 <figure>
   <img src="doc/images/screenshot.png" alt="template.nvim in action">
@@ -30,7 +30,7 @@
 
 </div>
 
-template.nvim is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+template.nvim is a neovim plugin that allows `<target_audience>` to `<action>`.
 
 ## ✨ Features
 
@@ -41,27 +41,54 @@ template.nvim is a `<utility/tool>` that allows `<target_audience>` to `<action>
 
 ### ⚙️ Requirements
 
-- foo >= bar
-- bazz
+- Latest version of `neovim`
 
 ### 💻 Installation
 
-Installing template.nvim is as simple as cloning and symlinking!
+```lua
+-- Lazy
+{
+    '2kabhishek/template.nvim',
+    dependencies = {
+        'nvim-lua/plenary.nvim'
+    },
+    cmd = 'TemplateHello',
+},
 
-```bash
-git clone https://github.com/2kabhishek/template.nvim
-cd template.nvim
-<install_command>
+-- Packer
+use '2kabhishek/template.nvim'
+
 ```
 
 ## 🚀 Usage
 
-```bash
-USAGE:
-    template.nvim [FLAGS] [OPTIONS]
-Example:
-    template.nvim
+### Configuration
+
+template.nvim can be configured using the following options:
+
+```lua
+template.setup({
+    name = 'template.nvim', -- Name to be greeted, 'World' by default
+})
 ```
+
+### Commands
+
+`template.nvim` adds the following commands:
+
+- `TemplateHello`: Shows a hello message with the confugred name.
+
+### Keybindings
+
+It is recommended to use:
+
+- `<leader>th,` for `TemplateHello`
+
+> NOTE: By default there are no configured keybindings.
+
+### Help
+
+Run `:help nerdy` for more details.
 
 ## 🏗️ What's Next
 
@@ -77,7 +104,7 @@ Planning to add `<feature/module>`.
 
 ### 🌈 Inspiration
 
-template.nvim was inspired by `<reason/idea>`.
+template.nvim was inspired by [nvim-plugin-template](https://github.com/ellisonleao/nvim-plugin-template), I added some changes on top to make setting up a new plugin faster.
 
 ### 💡 Challenges/Learnings
 
@@ -93,8 +120,9 @@ template.nvim was inspired by `<reason/idea>`.
 
 ### 🔍 More Info
 
-- [shelly](https://github.com/2kabhishek/shelly) — Command line template
-- [tiny-web](https://github.com/2kabhishek/tiny-web) — Web app template
+- [nerdy.nvim](https://github.com/2kabhishek/nerdy.nevim) — Find nerd glyphs easily
+- [tdo.nvim](https://github.com/2KAbhishek/tdo.nvim) — Fast and simple notes in Neovim
+- [termim.nvim](https://github.com/2kabhishek/termim,nvim) — Neovim terminal improved
 
 <hr>
 
