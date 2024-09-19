@@ -2,7 +2,7 @@
 local template_module = require('template.module')
 
 ---@class Config
----@field opt string Your config option
+---@field name string
 local config = {
     name = 'World!',
 }
