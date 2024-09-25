@@ -30,7 +30,7 @@
 
 </div>
 
-template.nvim is a neovim plugin that allows `<target_audience>` to `<action>`.
+template.nvim is a neovim plugin that allows neovim users to `<action>`.
 
 ## ✨ Features
 
@@ -100,7 +100,7 @@ Planning to add `<feature/module>`.
 - [ ] Think real hard
 - [ ] Start typing
 
-## 🧑‍💻 Behind The Code
+## ⛅ Behind The Code
 
 ### 🌈 Inspiration
 
