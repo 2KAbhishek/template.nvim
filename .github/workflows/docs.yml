@@ -16,10 +16,14 @@ jobs:
           version: "Neovim >= 0.8.0"
           demojify: true
           treesitter: true
-      - name: Push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Commit files
+        run: |
+          git config --local user.email "2kabhishek@users.noreply.github.com"
+          git config --local user.name "Abhishek via github-actions"
+          git add .
+          git commit -m "docs: update help docs"
+      - name: Push
+        uses: ad-m/github-push-action@master
         with:
-          commit_message: "auto-generate vimdoc"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
