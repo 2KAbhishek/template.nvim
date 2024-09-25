@@ -7,9 +7,9 @@ Table of Contents                                 *template-table-of-contents*
   - Setup                                                     |template-setup|
   - Usage                                                     |template-usage|
   - What’s Next                                     |template-what’s-next|
-  - ‍ Behind The Code                         |template-‍-behind-the-code|
+  - Behind The Code                                 |template-behind-the-code|
 
-template.nvim is a neovim plugin that allows `<target_audience>` to `<action>`.
+template.nvim is a neovim plugin that allows neovim users to `<action>`.
 
 
 FEATURES                                                   *template-features*
@@ -20,9 +20,6 @@ FEATURES                                                   *template-features*
 - Comes with a ready to go README template
 - Works with mkrepo <https://github.com/2kabhishek/mkrepo>
 
-
-  Generating vimdocs needs write access to actions (repo settings > actions >
-  general > workflow permissions)
 
 SETUP                                                         *template-setup*
 
@@ -50,6 +47,19 @@ INSTALLATION ~
 
 
 USAGE                                                         *template-usage*
+
+1. Fork the `template.nvim` repo
+2. Update the plugin name, file names etc, change `template` to `your-plugin-name`
+3. Add the code required for your plugin,- Main logic, config options for the plugin code goes into lua/template <./lua/template.lua>
+- Supporting code goes into lua/modules <./lua/template/> if needed
+- For adding commands and keybindngs use plugin/template <./plugin/template.lua>
+
+
+4. Add test code to the tests <./tests/template> directory
+5. Update the README
+6. Tweak the docs action <./.github/workflows/docs.yml> file to reflect your username, commit message and plugin name- Generating vimdocs needs write access to actions (repo settings > actions > general > workflow permissions)
+
+
 
 
 CONFIGURATION ~
@@ -96,7 +106,7 @@ TO-DO ~
 - Start typing
 
 
-‍ BEHIND THE CODE                             *template-‍-behind-the-code*
+BEHIND THE CODE                                     *template-behind-the-code*
 
 
 INSPIRATION ~
