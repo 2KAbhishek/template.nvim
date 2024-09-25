@@ -34,8 +34,13 @@ template.nvim is a neovim plugin that allows neovim users to `<action>`.
 
 ## ✨ Features
 
+- Includes a ready to go neovim plugin template
+- Comes with a lint and test CI action
+- Includes a Github action to auto generate vimdocs
 - Comes with a ready to go README template
 - Works with [mkrepo](https://github.com/2kabhishek/mkrepo)
+
+> Generating vimdocs needs write access to actions (repo settings > actions > general > workflow permissions)
 
 ## ⚡ Setup
 
