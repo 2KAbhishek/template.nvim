@@ -40,8 +40,6 @@ template.nvim is a neovim plugin that allows neovim users to `<action>`.
 - Comes with a ready to go README template
 - Works with [mkrepo](https://github.com/2kabhishek/mkrepo)
 
-> Generating vimdocs needs write access to actions (repo settings > actions > general > workflow permissions)
-
 ## ⚡ Setup
 
 ### ⚙️ Requirements
@@ -66,6 +64,17 @@ use '2kabhishek/template.nvim'
 ```
 
 ## 🚀 Usage
+
+1. Fork the `template.nvim` repo
+2. Update the plugin name, file names etc, change `template` to `your-plugin-name`
+3. Add the code required for your plugin,
+   - Main logic, config options for the plugin code goes into [lua/template](./lua/template.lua)
+   - Supporting code goes into [lua/modules](./lua/template/) if needed
+   - For adding commands and keybindngs use [plugin/template](./plugin/template.lua)
+4. Add test code to the [tests](./tests/template) directory
+5. Update the README
+6. Tweak the [docs action](./.github/workflows/docs.yml) file to reflect your username, commit message and plugin name
+   - Generating vimdocs needs write access to actions (repo settings > actions > general > workflow permissions)
 
 ### Configuration
 
