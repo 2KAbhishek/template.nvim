@@ -72,7 +72,7 @@ use '2kabhishek/template.nvim'
    - Main logic, config options for the plugin code goes into [lua/template](./lua/template.lua)
    - Supporting code goes into [lua/modules](./lua/template/) if needed
    - For adding commands and keybindngs use [plugin/template](./plugin/template.lua)
-4. Add test code to the [tests](./tests/template) directory
+4. Add test code to the [tests](./tests/template_spec.lua) file
 5. Update the README
 6. Tweak the [docs action](./.github/workflows/docs.yml) file to reflect your username, commit message and plugin name
 
