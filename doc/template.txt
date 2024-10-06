@@ -1,4 +1,4 @@
-*template.txt*        For Neovim >= 0.8.0       Last change: 2024 September 25
+*template.txt*         For Neovim >= 0.8.0        Last change: 2024 October 06
 
 ==============================================================================
 Table of Contents                                 *template-table-of-contents*
@@ -61,7 +61,7 @@ USAGE                                                         *template-usage*
 - For adding commands and keybindngs use plugin/template <./plugin/template.lua>
 
 
-4. Add test code to the tests <./tests/template> directory
+4. Add test code to the tests <./tests/template_spec.lua> file
 
 
 5. Update the README
