@@ -1,4 +1,4 @@
-*template.txt*         For Neovim >= 0.8.0        Last change: 2024 October 16
+*template.txt*        For Neovim >= 0.8.0        Last change: 2024 November 10
 
 ==============================================================================
 Table of Contents                                 *template-table-of-contents*
@@ -35,9 +35,6 @@ INSTALLATION ~
     -- Lazy
     {
         '2kabhishek/template.nvim',
-        dependencies = {
-            'nvim-lua/plenary.nvim'
-        },
         cmd = 'TemplateHello',
     },
     
@@ -56,12 +53,13 @@ USAGE                                                         *template-usage*
 
 3. Add the code required for your plugin,
 
-- Main logic, config options for the plugin code goes into lua/template <./lua/template.lua>
-- Supporting code goes into lua/modules <./lua/template/> if needed
-- For adding commands and keybindngs use plugin/template <./plugin/template.lua>
+- Code entrypoint is template.lua <./lua/template.lua>
+- Add user configs to config.lua <./lua/template/config.lua>
+- For adding commands and keybindngs use commands.lua <./lua/template/commands.lua>
+- Separate plugin logic into modules under modules <./lua/template/> dir
 
 
-4. Add test code to the tests <./tests/template_spec.lua> file
+4. Add test code to the tests <./tests/> directory
 
 
 5. Update the README
@@ -104,7 +102,7 @@ It is recommended to use:
 
 HELP ~
 
-Run `:help nerdy` for more details.
+Run `:help template.txt` for more details.
 
 
 WHAT’S NEXT                                         *template-what’s-next*
