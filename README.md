@@ -53,11 +53,11 @@ template.nvim is a neovim plugin that allows neovim users to `<action>`.
 {
     '2kabhishek/template.nvim',
     cmd = 'TemplateHello',
+    -- Add your custom configs here, keep it blank for default configs (required)
+    opts = {},
+    -- Use this for local development
+    -- dir = '~/path-to/template.nvim',
 },
-
--- Packer
-use '2kabhishek/template.nvim'
-
 ```
 
 ## 🚀 Usage
