@@ -133,9 +133,11 @@ template.nvim was inspired by [nvim-plugin-template](https://github.com/ellisonl
 
 ### 🔍 More Info
 
-- [nerdy.nvim](https://github.com/2kabhishek/nerdy.nevim) — Find nerd glyphs easily
+- [nerdy.nvim](https://github.com/2kabhishek/nerdy.nvim) — Find nerd glyphs easily
 - [tdo.nvim](https://github.com/2KAbhishek/tdo.nvim) — Fast and simple notes in Neovim
-- [termim.nvim](https://github.com/2kabhishek/termim,nvim) — Neovim terminal improved
+- [termim.nvim](https://github.com/2kabhishek/termim.nvim) — Neovim terminal improved
+- [octohub.nvim](https://github.com/2kabhishek/octohub.nvim) — Github repos in Neovim
+- [exercism.nvim](https://github.com/2kabhishek/exercism.nvim) — Exercism exercises in Neovim
 
 <hr>
 
