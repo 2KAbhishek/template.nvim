@@ -72,8 +72,7 @@ template.nvim is a neovim plugin that allows neovim users to `<action>`.
 4. Add test code to the [tests](./tests/) directory
 5. Update the README
 6. Tweak the [docs action](./.github/workflows/docs.yml) file to reflect your username, commit message and plugin name
-
-   - Generating vimdocs needs write access to actions (repo settings > actions > general > workflow permissions)
+   - Generating vimdocs needs read and write access to actions (repo settings > actions > general > workflow permissions)
 
 ### Configuration
 
