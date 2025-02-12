@@ -1,5 +1,5 @@
 TESTS_INIT=tests/init.lua
-TESTS_DIR=tests/
+TESTS_DIR=tests
 
 .PHONY: test
 
