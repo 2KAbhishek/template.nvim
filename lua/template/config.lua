@@ -3,8 +3,8 @@
 local M = {}
 
 ---@class TemplateConfig
----@field name string Name to greet
----@field add_default_keybindings boolean Whether to add default keybindings
+---@field name string Name to greet. Default: 'World!'
+---@field add_default_keybindings boolean Whether to add default keybindings. Default: true
 local config = {
     name = 'World!',
     add_default_keybindings = true,
