@@ -1,10 +1,10 @@
 -- Define config structure here, setup function will override defaults with user config
----@class TemplateModule
+---@class Template
 local M = {}
 
 ---@class TemplateConfig
----@field name string
----@field add_default_keybindings boolean
+---@field name string Name to greet
+---@field add_default_keybindings boolean Whether to add default keybindings
 local config = {
     name = 'World!',
     add_default_keybindings = true,

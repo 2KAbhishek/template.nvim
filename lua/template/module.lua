@@ -1,4 +1,4 @@
----@class CustomModule
+---@class TemplateModule
 local M = {}
 local config = require('template.config').config
 

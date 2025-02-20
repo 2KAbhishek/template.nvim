@@ -1,5 +1,5 @@
 local template_module = require('template.module')
-local config = require('template.config')
+local config = require('template.config').config
 
 local M = {}
 
