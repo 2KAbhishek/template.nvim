@@ -1,4 +1,4 @@
-*template.txt*        For Neovim >= 0.8.0        Last change: 2025 February 12
+*template.txt*        For Neovim >= 0.8.0        Last change: 2025 February 20
 
 ==============================================================================
 Table of Contents                                 *template-table-of-contents*
