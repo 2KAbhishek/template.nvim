@@ -34,11 +34,14 @@ template.nvim is a neovim plugin that allows neovim users to `<action>`.
 
 ## ✨ Features
 
-- Includes a ready to go neovim plugin template
-- Comes with a lint and test CI action
-- Includes a Github action to auto generate vimdocs
-- Comes with a ready to go README template
-- Works with [mkrepo](https://github.com/2kabhishek/mkrepo)
+- **Modern Plugin Architecture**: Ready-to-go Neovim plugin template with best practices
+- **Unified Command System**: Modern command interface with tab completion support
+- **Type Safety**: Comprehensive type annotations using LSP-compatible `@class` and `@param`
+- **DRY Code Patterns**: Reusable helper functions and modular design
+- **CI/CD Ready**: Lint and test GitHub Actions included
+- **Auto Documentation**: GitHub Action to auto-generate vimdocs
+- **Professional README**: Complete template with modern formatting
+- **Integration Ready**: Works seamlessly with [mkrepo](https://github.com/2kabhishek/mkrepo)
 
 ## ⚡ Setup
 
@@ -52,7 +55,8 @@ template.nvim is a neovim plugin that allows neovim users to `<action>`.
 -- Lazy
 {
     '2kabhishek/template.nvim',
-    cmd = 'TemplateHello',
+    cmd = { 'Template' },
+    keys = { '<leader>th', '<leader>tH', },
     -- Add your custom configs here, keep it blank for default configs (required)
     opts = {},
     -- Use this for local development
@@ -64,14 +68,20 @@ template.nvim is a neovim plugin that allows neovim users to `<action>`.
 
 1. Fork the `template.nvim` repo
 2. Update the plugin name, file names etc, change `template` to `your-plugin-name`
-3. Add the code required for your plugin,
-   - Code entrypoint is [template.lua](./lua/template.lua)
-   - Add user configs to [config.lua](./lua/template/config.lua)
-   - For adding commands and keybindngs use [commands.lua](./lua/template/commands.lua)
-   - Separate plugin logic into modules under [modules](./lua/template/) dir
-4. Add test code to the [tests](./tests/) directory
-5. Update the README
-6. Tweak the [docs action](./.github/workflows/docs.yml) file to reflect your plugin name, commit email and username
+3. Add the code required for your plugin:
+   - **Code entrypoint**: [template.lua](./lua/template.lua) - Main setup function
+   - **User configs**: [config.lua](./lua/template/config.lua) - Configuration with type annotations
+   - **Commands**: [commands.lua](./lua/template/commands.lua) - Modern command system with completion
+   - **Plugin logic**: [module.lua](./lua/template/module.lua) - Core functionality with type safety
+   - **Additional modules**: Add more modules under [modules](./lua/template/) directory as needed
+4. **Command System Features**:
+   - Unified command interface with subcommands
+   - Tab completion support for better UX
+   - Reusable helper functions for DRY code
+   - Comprehensive type annotations for better development experience
+5. Add test code to the [tests](./tests/) directory
+6. Update the README with your plugin's functionality
+7. Tweak the [docs action](./.github/workflows/docs.yml) file to reflect your plugin name, commit email and username
    - Generating vimdocs needs read and write access to actions (repo settings > actions > general > workflow permissions)
 
 ### Configuration
@@ -80,23 +90,28 @@ template.nvim can be configured using the following options:
 
 ```lua
 template.setup({
-    name = 'template.nvim', -- Name to be greeted, 'World' by default
+    name = 'template.nvim', -- Name to be greeted, 'World!' by default
+    add_default_keybindings = true, -- Whether to add default keybindings
 })
 ```
 
 ### Commands
 
-`template.nvim` adds the following commands:
+`template.nvim` provides a unified command interface with tab completion:
 
-- `TemplateHello`: Shows a hello message with the confugred name.
+- `Template greet [name]` - Shows a hello message with the specified name (with tab completion)
+- `Template notify [message]` - Shows a notification with custom message
 
 ### Keybindings
 
-It is recommended to use:
+Here are the default keybindings:
 
-- `<leader>th,` for `TemplateHello`
+| Keybinding   | Command                 | Description                 |
+| ------------ | ----------------------- | --------------------------- |
+| `<leader>th` | `Template greet`        | Template greet default name |
+| `<leader>tH` | `Template greet Neovim` | Template greet Neovim       |
 
-> NOTE: By default there are no configured keybindings.
+> You can disable default keybindings by setting `add_default_keybindings = false` in your config.
 
 ### Help
 
